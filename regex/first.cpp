@@ -16,8 +16,10 @@ int regexSrc(string str, regex reg){
     else return 0;
 }
 
+// (a+b+...+z) // (a+b) // |
+
 void intVar(string str){
-    regex reg("(^[i-nI-N][a-zA-Z0-9]*$)");
+    regex reg("(^[i-n|I-N][a-zA-Z0-9]*$)");
     int result = regexSrc(str, reg);
     if(result) cout << "Integer Variable" << endl;
     else cout << "Otherwise" << endl;

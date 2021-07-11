@@ -6,7 +6,7 @@ int printMatches(string str, regex reg){
     smatch match;
 
     while(regex_search(str, match, reg)){
-//        cout << match.str(1) << endl;
+        cout << match.str(1) << endl;
         str = match.suffix().str();
         ++mCount;
 //        cout << "This " << mCount << endl;
