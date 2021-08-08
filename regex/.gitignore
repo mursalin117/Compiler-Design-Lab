@@ -1,0 +1,8 @@
+# ignore all files
+* 
+
+# except this files
+!*.txt
+!*.cpp
+!.gitignore
+!/lab-work
